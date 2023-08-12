@@ -1,5 +1,21 @@
 `timescale 1ns / 1ps
 
+
+`include "ALU.v"
+`include "Branch_select.v"
+`include "BranchDetection.v"
+`include "Constant_unit.v"
+`include "Data_mem.v"
+`include "DHS.v"
+`include "Instruction_Decoder.v"
+`include "MUX_A.v"
+`include "MUX_B.v"
+`include "MUX_C.v"
+`include "MUX_D.v"
+`include "Program_memory.v"
+`include "Reg_f.v"
+
+
 module MCU(
     input clk,reset,
     output reg [16:0] Out,PC,IR,A,B,F
